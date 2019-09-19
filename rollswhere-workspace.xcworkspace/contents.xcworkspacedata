@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:testing-playground.playground">
+      location = "group:Rollswhere.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../RollswhereEngine">
    </FileRef>
 </Workspace>
