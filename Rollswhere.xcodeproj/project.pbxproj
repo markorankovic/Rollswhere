@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD63AB2C2335557600F92F56 /* PlayerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD63AB2B2335557600F92F56 /* PlayerComponent.swift */; };
 		ADA7863C2333FFFB003BBE43 /* Shootable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7863B2333FFFB003BBE43 /* Shootable.swift */; };
 		ADA7863E23340049003BBE43 /* PhysicsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7863D23340049003BBE43 /* PhysicsComponent.swift */; };
 		ADA7864023340077003BBE43 /* RotateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7863F23340077003BBE43 /* RotateComponent.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD63AB2B2335557600F92F56 /* PlayerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerComponent.swift; sourceTree = "<group>"; };
 		ADA7863B2333FFFB003BBE43 /* Shootable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shootable.swift; sourceTree = "<group>"; };
 		ADA7863D23340049003BBE43 /* PhysicsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsComponent.swift; sourceTree = "<group>"; };
 		ADA7863F23340077003BBE43 /* RotateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateComponent.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				ADA786412334009E003BBE43 /* DragComponent.swift */,
 				ADA7864323340120003BBE43 /* StartComponent.swift */,
 				ADA7864523340143003BBE43 /* FinishComponent.swift */,
+				AD63AB2B2335557600F92F56 /* PlayerComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA7863C2333FFFB003BBE43 /* Shootable.swift in Sources */,
+				AD63AB2C2335557600F92F56 /* PlayerComponent.swift in Sources */,
 				ADF921B02333F3470055AA95 /* ViewController.swift in Sources */,
 				ADF921A82333F3470055AA95 /* AppDelegate.swift in Sources */,
 				ADA7863E23340049003BBE43 /* PhysicsComponent.swift in Sources */,
