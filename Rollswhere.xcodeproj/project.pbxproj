@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD035637233DBFE8007F93FE /* PlayerControlComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD035636233DBFE8007F93FE /* PlayerControlComponent.swift */; };
 		AD173C39233C1AB80043B98C /* MyScene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = AD173C38233C1AB80043B98C /* MyScene2.sks */; };
+		AD831A892346B1950005B045 /* RollswhereEngine in Frameworks */ = {isa = PBXBuildFile; productRef = AD831A882346B1950005B045 /* RollswhereEngine */; };
 		ADA7863C2333FFFB003BBE43 /* Shootable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7863B2333FFFB003BBE43 /* Shootable.swift */; };
 		ADA7863E23340049003BBE43 /* PhysicsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7863D23340049003BBE43 /* PhysicsComponent.swift */; };
 		ADA7864023340077003BBE43 /* RotateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7863F23340077003BBE43 /* RotateComponent.swift */; };
@@ -19,7 +20,6 @@
 		ADF921B02333F3470055AA95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF921AF2333F3470055AA95 /* ViewController.swift */; };
 		ADF921B22333F3480055AA95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF921B12333F3480055AA95 /* Assets.xcassets */; };
 		ADF921B52333F3480055AA95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF921B32333F3480055AA95 /* Main.storyboard */; };
-		ADF921C82333F3840055AA95 /* RollswhereEngine in Frameworks */ = {isa = PBXBuildFile; productRef = ADF921C72333F3840055AA95 /* RollswhereEngine */; };
 		ADF921CB2333F72C0055AA95 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = ADF921C92333F72C0055AA95 /* Images */; };
 		ADF921CE2333F76F0055AA95 /* MyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = ADF921CD2333F76F0055AA95 /* MyScene.sks */; };
 /* End PBXBuildFile section */
@@ -33,6 +33,7 @@
 		ADA786412334009E003BBE43 /* DragComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragComponent.swift; sourceTree = "<group>"; };
 		ADA7864323340120003BBE43 /* StartComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartComponent.swift; sourceTree = "<group>"; };
 		ADA7864523340143003BBE43 /* FinishComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishComponent.swift; sourceTree = "<group>"; };
+		ADB890002347B09C001B0CF4 /* Smorgasbord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Smorgasbord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF921A42333F3470055AA95 /* Rollswhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rollswhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF921A72333F3470055AA95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF921AF2333F3470055AA95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,13 +50,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADF921C82333F3840055AA95 /* RollswhereEngine in Frameworks */,
+				AD831A892346B1950005B045 /* RollswhereEngine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD831A872346B1950005B045 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADB890002347B09C001B0CF4 /* Smorgasbord.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ADA7863A2333FFE9003BBE43 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +84,7 @@
 			children = (
 				ADF921A62333F3470055AA95 /* Rollswhere */,
 				ADF921A52333F3470055AA95 /* Products */,
+				AD831A872346B1950005B045 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,7 +130,7 @@
 			);
 			name = Rollswhere;
 			packageProductDependencies = (
-				ADF921C72333F3840055AA95 /* RollswhereEngine */,
+				AD831A882346B1950005B045 /* RollswhereEngine */,
 			);
 			productName = Rollswhere;
 			productReference = ADF921A42333F3470055AA95 /* Rollswhere.app */;
@@ -151,7 +161,6 @@
 			);
 			mainGroup = ADF9219B2333F3470055AA95;
 			packageReferences = (
-				ADF921C62333F3840055AA95 /* XCRemoteSwiftPackageReference "RollswhereEngine" */,
 			);
 			productRefGroup = ADF921A52333F3470055AA95 /* Products */;
 			projectDirPath = "";
@@ -384,21 +393,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		ADF921C62333F3840055AA95 /* XCRemoteSwiftPackageReference "RollswhereEngine" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:markorankovic/RollswhereEngine.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		ADF921C72333F3840055AA95 /* RollswhereEngine */ = {
+		AD831A882346B1950005B045 /* RollswhereEngine */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ADF921C62333F3840055AA95 /* XCRemoteSwiftPackageReference "RollswhereEngine" */;
 			productName = RollswhereEngine;
 		};
 /* End XCSwiftPackageProductDependency section */
