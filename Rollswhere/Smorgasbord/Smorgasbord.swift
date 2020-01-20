@@ -15,8 +15,16 @@ extension Sequence {
 
 extension CGPoint {
     
+    public func distanceFrom(_ point: CGPoint) -> CGFloat {
+        return hypot(x - point.x, y - point.y)
+    }
+    
     public static func *(_ lhs: CGPoint, _ rhs: CGFloat) -> CGPoint {
         return CGPoint(x: lhs.x * rhs, y: lhs.y * rhs)
+    }
+    
+    public static func /(_ lhs: CGPoint, _ rhs: CGFloat) -> CGPoint {
+        return CGPoint(x: lhs.x / rhs, y: lhs.y / rhs)
     }
     
     public static func -(_ lhs: CGPoint, _ rhs: CGPoint) -> CGPoint {
