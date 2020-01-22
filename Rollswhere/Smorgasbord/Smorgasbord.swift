@@ -15,6 +15,10 @@ extension Sequence {
 
 extension CGPoint {
     
+    public func angleTo(_ point: CGPoint) -> CGFloat {
+        return atan2(point.y - y, point.x - x)
+    }
+    
     public func distanceFrom(_ point: CGPoint) -> CGFloat {
         return hypot(x - point.x, y - point.y)
     }
