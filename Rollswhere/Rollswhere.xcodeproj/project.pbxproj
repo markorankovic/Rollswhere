@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1A870A2549F50A00A03B25 /* GameSceneExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A87092549F50A00A03B25 /* GameSceneExt.swift */; };
+		AD1A870F2549F52A00A03B25 /* imports.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A870E2549F52A00A03B25 /* imports.swift */; };
 		AD6414AB25499C0C00A9ADE7 /* RollswhereApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6414AA25499C0C00A9ADE7 /* RollswhereApp.swift */; };
 		AD6414AD25499C0C00A9ADE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6414AC25499C0C00A9ADE7 /* ContentView.swift */; };
 		AD6414AF25499C0C00A9ADE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6414AE25499C0C00A9ADE7 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD1A87092549F50A00A03B25 /* GameSceneExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneExt.swift; sourceTree = "<group>"; };
+		AD1A870E2549F52A00A03B25 /* imports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imports.swift; sourceTree = "<group>"; };
 		AD6414A725499C0C00A9ADE7 /* Rollswhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rollswhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6414AA25499C0C00A9ADE7 /* RollswhereApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollswhereApp.swift; sourceTree = "<group>"; };
 		AD6414AC25499C0C00A9ADE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,11 +105,13 @@
 			children = (
 				AD6414B325499C0C00A9ADE7 /* Info.plist */,
 				AD6414AC25499C0C00A9ADE7 /* ContentView.swift */,
+				AD6414E325499E8100A9ADE7 /* GameScene.swift */,
+				AD1A87092549F50A00A03B25 /* GameSceneExt.swift */,
 				AD6414DB25499DE100A9ADE7 /* GameView.swift */,
+				AD1A870E2549F52A00A03B25 /* imports.swift */,
 				AD6414AA25499C0C00A9ADE7 /* RollswhereApp.swift */,
 				AD6414AE25499C0C00A9ADE7 /* Assets.xcassets */,
 				AD6414B025499C0C00A9ADE7 /* Preview Content */,
-				AD6414E325499E8100A9ADE7 /* GameScene.swift */,
 			);
 			path = Rollswhere;
 			sourceTree = "<group>";
@@ -265,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1A870A2549F50A00A03B25 /* GameSceneExt.swift in Sources */,
 				AD6414AD25499C0C00A9ADE7 /* ContentView.swift in Sources */,
+				AD1A870F2549F52A00A03B25 /* imports.swift in Sources */,
 				AD6414DC25499DE100A9ADE7 /* GameView.swift in Sources */,
 				AD6414E425499E8100A9ADE7 /* GameScene.swift in Sources */,
 				AD6414AB25499C0C00A9ADE7 /* RollswhereApp.swift in Sources */,
