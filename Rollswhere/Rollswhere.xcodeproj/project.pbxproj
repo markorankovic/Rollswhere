@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD6414AB25499C0C00A9ADE7 /* RollswhereApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6414AA25499C0C00A9ADE7 /* RollswhereApp.swift */; };
+		AD6414AD25499C0C00A9ADE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6414AC25499C0C00A9ADE7 /* ContentView.swift */; };
+		AD6414AF25499C0C00A9ADE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6414AE25499C0C00A9ADE7 /* Assets.xcassets */; };
+		AD6414B225499C0C00A9ADE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6414B125499C0C00A9ADE7 /* Preview Assets.xcassets */; };
+		AD6414BD25499C0D00A9ADE7 /* RollswhereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6414BC25499C0D00A9ADE7 /* RollswhereTests.swift */; };
+		AD6414C825499C0D00A9ADE7 /* RollswhereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6414C725499C0D00A9ADE7 /* RollswhereUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD6414B925499C0D00A9ADE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD64149F25499C0C00A9ADE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD6414A625499C0C00A9ADE7;
+			remoteInfo = Rollswhere;
+		};
+		AD6414C425499C0D00A9ADE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD64149F25499C0C00A9ADE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD6414A625499C0C00A9ADE7;
+			remoteInfo = Rollswhere;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD6414A725499C0C00A9ADE7 /* Rollswhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rollswhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6414AA25499C0C00A9ADE7 /* RollswhereApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollswhereApp.swift; sourceTree = "<group>"; };
+		AD6414AC25499C0C00A9ADE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD6414AE25499C0C00A9ADE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD6414B125499C0C00A9ADE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD6414B325499C0C00A9ADE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6414B825499C0D00A9ADE7 /* RollswhereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollswhereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6414BC25499C0D00A9ADE7 /* RollswhereTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollswhereTests.swift; sourceTree = "<group>"; };
+		AD6414BE25499C0D00A9ADE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6414C325499C0D00A9ADE7 /* RollswhereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollswhereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6414C725499C0D00A9ADE7 /* RollswhereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollswhereUITests.swift; sourceTree = "<group>"; };
+		AD6414C925499C0D00A9ADE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD6414A425499C0C00A9ADE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6414B525499C0D00A9ADE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6414C025499C0D00A9ADE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD64149E25499C0C00A9ADE7 = {
+			isa = PBXGroup;
+			children = (
+				AD6414A925499C0C00A9ADE7 /* Rollswhere */,
+				AD6414BB25499C0D00A9ADE7 /* RollswhereTests */,
+				AD6414C625499C0D00A9ADE7 /* RollswhereUITests */,
+				AD6414A825499C0C00A9ADE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD6414A825499C0C00A9ADE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD6414A725499C0C00A9ADE7 /* Rollswhere.app */,
+				AD6414B825499C0D00A9ADE7 /* RollswhereTests.xctest */,
+				AD6414C325499C0D00A9ADE7 /* RollswhereUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD6414A925499C0C00A9ADE7 /* Rollswhere */ = {
+			isa = PBXGroup;
+			children = (
+				AD6414AA25499C0C00A9ADE7 /* RollswhereApp.swift */,
+				AD6414AC25499C0C00A9ADE7 /* ContentView.swift */,
+				AD6414AE25499C0C00A9ADE7 /* Assets.xcassets */,
+				AD6414B325499C0C00A9ADE7 /* Info.plist */,
+				AD6414B025499C0C00A9ADE7 /* Preview Content */,
+			);
+			path = Rollswhere;
+			sourceTree = "<group>";
+		};
+		AD6414B025499C0C00A9ADE7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD6414B125499C0C00A9ADE7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD6414BB25499C0D00A9ADE7 /* RollswhereTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD6414BC25499C0D00A9ADE7 /* RollswhereTests.swift */,
+				AD6414BE25499C0D00A9ADE7 /* Info.plist */,
+			);
+			path = RollswhereTests;
+			sourceTree = "<group>";
+		};
+		AD6414C625499C0D00A9ADE7 /* RollswhereUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD6414C725499C0D00A9ADE7 /* RollswhereUITests.swift */,
+				AD6414C925499C0D00A9ADE7 /* Info.plist */,
+			);
+			path = RollswhereUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD6414A625499C0C00A9ADE7 /* Rollswhere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6414CC25499C0D00A9ADE7 /* Build configuration list for PBXNativeTarget "Rollswhere" */;
+			buildPhases = (
+				AD6414A325499C0C00A9ADE7 /* Sources */,
+				AD6414A425499C0C00A9ADE7 /* Frameworks */,
+				AD6414A525499C0C00A9ADE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rollswhere;
+			productName = Rollswhere;
+			productReference = AD6414A725499C0C00A9ADE7 /* Rollswhere.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD6414B725499C0D00A9ADE7 /* RollswhereTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6414CF25499C0D00A9ADE7 /* Build configuration list for PBXNativeTarget "RollswhereTests" */;
+			buildPhases = (
+				AD6414B425499C0D00A9ADE7 /* Sources */,
+				AD6414B525499C0D00A9ADE7 /* Frameworks */,
+				AD6414B625499C0D00A9ADE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD6414BA25499C0D00A9ADE7 /* PBXTargetDependency */,
+			);
+			name = RollswhereTests;
+			productName = RollswhereTests;
+			productReference = AD6414B825499C0D00A9ADE7 /* RollswhereTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD6414C225499C0D00A9ADE7 /* RollswhereUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6414D225499C0D00A9ADE7 /* Build configuration list for PBXNativeTarget "RollswhereUITests" */;
+			buildPhases = (
+				AD6414BF25499C0D00A9ADE7 /* Sources */,
+				AD6414C025499C0D00A9ADE7 /* Frameworks */,
+				AD6414C125499C0D00A9ADE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD6414C525499C0D00A9ADE7 /* PBXTargetDependency */,
+			);
+			name = RollswhereUITests;
+			productName = RollswhereUITests;
+			productReference = AD6414C325499C0D00A9ADE7 /* RollswhereUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD64149F25499C0C00A9ADE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					AD6414A625499C0C00A9ADE7 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					AD6414B725499C0D00A9ADE7 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = AD6414A625499C0C00A9ADE7;
+					};
+					AD6414C225499C0D00A9ADE7 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = AD6414A625499C0C00A9ADE7;
+					};
+				};
+			};
+			buildConfigurationList = AD6414A225499C0C00A9ADE7 /* Build configuration list for PBXProject "Rollswhere" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD64149E25499C0C00A9ADE7;
+			productRefGroup = AD6414A825499C0C00A9ADE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD6414A625499C0C00A9ADE7 /* Rollswhere */,
+				AD6414B725499C0D00A9ADE7 /* RollswhereTests */,
+				AD6414C225499C0D00A9ADE7 /* RollswhereUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD6414A525499C0C00A9ADE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6414B225499C0C00A9ADE7 /* Preview Assets.xcassets in Resources */,
+				AD6414AF25499C0C00A9ADE7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6414B625499C0D00A9ADE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6414C125499C0D00A9ADE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD6414A325499C0C00A9ADE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6414AD25499C0C00A9ADE7 /* ContentView.swift in Sources */,
+				AD6414AB25499C0C00A9ADE7 /* RollswhereApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6414B425499C0D00A9ADE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6414BD25499C0D00A9ADE7 /* RollswhereTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6414BF25499C0D00A9ADE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6414C825499C0D00A9ADE7 /* RollswhereUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD6414BA25499C0D00A9ADE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD6414A625499C0C00A9ADE7 /* Rollswhere */;
+			targetProxy = AD6414B925499C0D00A9ADE7 /* PBXContainerItemProxy */;
+		};
+		AD6414C525499C0D00A9ADE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD6414A625499C0C00A9ADE7 /* Rollswhere */;
+			targetProxy = AD6414C425499C0D00A9ADE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AD6414CA25499C0D00A9ADE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD6414CB25499C0D00A9ADE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD6414CD25499C0D00A9ADE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Rollswhere/Preview Content\"";
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Rollswhere/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.markorankovic.Rollswhere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD6414CE25499C0D00A9ADE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Rollswhere/Preview Content\"";
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Rollswhere/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.markorankovic.Rollswhere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD6414D025499C0D00A9ADE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
+				INFOPLIST_FILE = RollswhereTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.markorankovic.RollswhereTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rollswhere.app/Rollswhere";
+			};
+			name = Debug;
+		};
+		AD6414D125499C0D00A9ADE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
+				INFOPLIST_FILE = RollswhereTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.markorankovic.RollswhereTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rollswhere.app/Rollswhere";
+			};
+			name = Release;
+		};
+		AD6414D325499C0D00A9ADE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
+				INFOPLIST_FILE = RollswhereUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.markorankovic.RollswhereUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rollswhere;
+			};
+			name = Debug;
+		};
+		AD6414D425499C0D00A9ADE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83XX9TWPTZ;
+				INFOPLIST_FILE = RollswhereUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.markorankovic.RollswhereUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rollswhere;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD6414A225499C0C00A9ADE7 /* Build configuration list for PBXProject "Rollswhere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6414CA25499C0D00A9ADE7 /* Debug */,
+				AD6414CB25499C0D00A9ADE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD6414CC25499C0D00A9ADE7 /* Build configuration list for PBXNativeTarget "Rollswhere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6414CD25499C0D00A9ADE7 /* Debug */,
+				AD6414CE25499C0D00A9ADE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD6414CF25499C0D00A9ADE7 /* Build configuration list for PBXNativeTarget "RollswhereTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6414D025499C0D00A9ADE7 /* Debug */,
+				AD6414D125499C0D00A9ADE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD6414D225499C0D00A9ADE7 /* Build configuration list for PBXNativeTarget "RollswhereUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6414D325499C0D00A9ADE7 /* Debug */,
+				AD6414D425499C0D00A9ADE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD64149F25499C0C00A9ADE7 /* Project object */;
+}
