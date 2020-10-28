@@ -13,6 +13,8 @@
 		AD6414B225499C0C00A9ADE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6414B125499C0C00A9ADE7 /* Preview Assets.xcassets */; };
 		AD6414BD25499C0D00A9ADE7 /* RollswhereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6414BC25499C0D00A9ADE7 /* RollswhereTests.swift */; };
 		AD6414C825499C0D00A9ADE7 /* RollswhereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6414C725499C0D00A9ADE7 /* RollswhereUITests.swift */; };
+		AD6414DC25499DE100A9ADE7 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6414DB25499DE100A9ADE7 /* GameView.swift */; };
+		AD6414E425499E8100A9ADE7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6414E325499E8100A9ADE7 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		AD6414C325499C0D00A9ADE7 /* RollswhereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RollswhereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6414C725499C0D00A9ADE7 /* RollswhereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollswhereUITests.swift; sourceTree = "<group>"; };
 		AD6414C925499C0D00A9ADE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6414DB25499DE100A9ADE7 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		AD6414E325499E8100A9ADE7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +99,13 @@
 		AD6414A925499C0C00A9ADE7 /* Rollswhere */ = {
 			isa = PBXGroup;
 			children = (
-				AD6414AA25499C0C00A9ADE7 /* RollswhereApp.swift */,
-				AD6414AC25499C0C00A9ADE7 /* ContentView.swift */,
-				AD6414AE25499C0C00A9ADE7 /* Assets.xcassets */,
 				AD6414B325499C0C00A9ADE7 /* Info.plist */,
+				AD6414AC25499C0C00A9ADE7 /* ContentView.swift */,
+				AD6414DB25499DE100A9ADE7 /* GameView.swift */,
+				AD6414AA25499C0C00A9ADE7 /* RollswhereApp.swift */,
+				AD6414AE25499C0C00A9ADE7 /* Assets.xcassets */,
 				AD6414B025499C0C00A9ADE7 /* Preview Content */,
+				AD6414E325499E8100A9ADE7 /* GameScene.swift */,
 			);
 			path = Rollswhere;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD6414AD25499C0C00A9ADE7 /* ContentView.swift in Sources */,
+				AD6414DC25499DE100A9ADE7 /* GameView.swift in Sources */,
+				AD6414E425499E8100A9ADE7 /* GameScene.swift in Sources */,
 				AD6414AB25499C0C00A9ADE7 /* RollswhereApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
