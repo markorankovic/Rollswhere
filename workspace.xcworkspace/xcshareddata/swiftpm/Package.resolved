@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Hope",
+        "repositoryURL": "https://github.com/screensailor/Hope.git",
+        "state": {
+          "branch": "trunk",
+          "revision": "3d1c857a0179b4ca8aaaddcfe8247413853c5fc9",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
