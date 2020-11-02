@@ -2,65 +2,90 @@ import Hope
 import RollswhereAPI
 
 final class RequirementsTest: Hopes {
-    let game = GameRequirementsTracker()
+    let tracker = GameRequirementsTracker()
     func test_shootBall() {
-        XCTAssert(game.shootBall())
+        XCTAssert(tracker.shootBall())
     }
     func test_nextLevel() {
-        XCTAssert(game.nextLevel())
+        XCTAssert(tracker.nextLevel())
     }
     func test_returnBall() {
-        XCTAssert(game.returnBall())
+        XCTAssert(tracker.returnBall())
     }
     func test_returnToMainMenu() {
-        XCTAssert(game.returnToMainMenu())
+        XCTAssert(tracker.returnToMainMenu())
     }
     func test_shootHook() {
-        XCTAssert(game.shootHook())
+        XCTAssert(tracker.shootHook())
     }
     func test_showPowerLevel() {
-        XCTAssert(game.showPowerLevel())
+        XCTAssert(tracker.showPowerLevel())
     }
     func test_startWithLevel() {
-        XCTAssert(game.startWithLevel())
+        XCTAssert(tracker.startWithLevel())
     }
     func test_toggleActivateBall() {
-        XCTAssert(game.toggleActivateBall())
+        XCTAssert(tracker.toggleActivateBall())
     }
     func test_zoomFeatures() {
-        XCTAssert(game.zoomFeatures())
+        XCTAssert(tracker.zoomFeatures())
     }
     func test_allSpecialsImplemented() {
-        XCTAssert(game.allSpecialsImplemented())
+        XCTAssert(tracker.allSpecialsImplemented())
     }
     func test_autoGameSaveAndLoad() {
-        XCTAssert(game.autoGameSaveAndLoad())
+        XCTAssert(tracker.autoGameSaveAndLoad())
     }
     func test_breaking() {
-        XCTAssert(game.breaking())
+        XCTAssert(tracker.breaking())
     }
     func test_draggableAndRotatingItems() {
-        XCTAssert(game.draggableAndRotatingItems())
+        XCTAssert(tracker.draggableAndRotatingItems())
     }
     func test_exitKeys() {
-        XCTAssert(game.exitKeys())
+        XCTAssert(tracker.exitKeys())
     }
     func test_interactiveMap() {
-        XCTAssert(game.interactiveMap())
+        XCTAssert(tracker.interactiveMap())
     }
     func test_levelSelection() {
-        XCTAssert(game.levelSelection())
+        XCTAssert(tracker.levelSelection())
     }
     func test_iOSAndmacOSCompatibility() {
-        XCTAssert(game.iOSAndmacOSCompatibility())
+        XCTAssert(tracker.iOSAndmacOSCompatibility())
     }
     func test_portals() {
-        XCTAssert(game.portals())
+        XCTAssert(tracker.portals())
     }
     func test_mainMenu() {
-        XCTAssert(game.mainMenu())
+        XCTAssert(tracker.mainMenu())
     }
     func test_togglePause() {
-        XCTAssert(game.togglePause())
+        XCTAssert(tracker.togglePause())
+    }
+    func test_associateBehaviorsWithSKNodes() {
+        XCTAssert(tracker.associateBehaviorsWithSKNodes())
+    }
+    func test_draggingOnlyOneSKNodeAtATime() {
+        XCTAssert(tracker.draggingOnlyOneSKNodeAtATime())
+    }
+    func test_HUD() {
+        XCTAssert(tracker.HUD())
+    }
+    func test_photoshopLevelTemplate() {
+        XCTAssert(tracker.photoshopLevelTemplate())
+    }
+    func test_ballDesign() {
+        XCTAssert(tracker.ballDesign())
+    }
+    func test_pipeDesign() {
+        XCTAssert(tracker.pipeDesign())
+    }
+    func test_blockDesign() {
+        XCTAssert(tracker.blockDesign())
+    }
+    func test_aspectRatioBoxes() {
+        XCTAssert(tracker.aspectRatioBoxes())
     }
 }
+ 
