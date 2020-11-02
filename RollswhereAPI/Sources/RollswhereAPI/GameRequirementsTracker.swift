@@ -25,10 +25,12 @@ public struct GameRequirementsTracker {
     public func associateBehaviorsWithSKNodes() -> Bool { false }
     public func draggingOnlyOneSKNodeAtATime() -> Bool  { false }
     public func HUD() -> Bool                           { false }
-    public func photoshopLevelTemplate() -> Bool        { false }
+    public func photoshopLevelTemplate() -> Bool        { true  }
     public func ballDesign() -> Bool                    { false }
     public func pipeDesign() -> Bool                    { false }
     public func blockDesign() -> Bool                   { false }
     public func aspectRatioBoxes() -> Bool              { false }
     public func createdUniqueTypefaceForGame() -> Bool  { false }
+    public func sksTemplateMade() -> Bool               { false }
+    public func autoExportPhotoshopAssets() -> Bool     { false }
 }

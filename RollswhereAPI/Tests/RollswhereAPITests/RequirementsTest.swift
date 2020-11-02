@@ -87,5 +87,13 @@ final class RequirementsTest: Hopes {
     func test_aspectRatioBoxes() {
         XCTAssert(tracker.aspectRatioBoxes())
     }
+    func test_createdUniqueTypefaceForGame() {
+        XCTAssert(tracker.createdUniqueTypefaceForGame())
+    }
+    func test_sksTemplateMade() {
+        XCTAssert(tracker.sksTemplateMade())
+    }
+    func test_autoExportPhotoshopAssets() {
+        XCTAssert(tracker.autoExportPhotoshopAssets())
+    }
 }
- 
