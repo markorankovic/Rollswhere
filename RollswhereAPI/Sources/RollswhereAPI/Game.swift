@@ -1,8 +1,8 @@
-public struct RollswhereAPI {
+public struct Game {
     public init() { }
 }
 
-extension RollswhereAPI: Requirements {
+extension Game: Requirements {
     public func exitKeys() -> Bool                      { false }
     public func interactiveMap() -> Bool                { false }
     public func mainMenu() -> Bool                      { false }

@@ -2,32 +2,32 @@ import Hope
 import RollswhereAPI
 
 final class RequirementsTest: Hopes {
-    let api = RollswhereAPI()
+    let game = Game()
     func test_shootBall() {
-        XCTAssert(api.shootBall())
+        XCTAssert(game.shootBall())
     }
     func test_nextLevel() {
-        XCTAssert(api.nextLevel())
+        XCTAssert(game.nextLevel())
     }
     func test_returnBall() {
-        XCTAssert(api.returnBall())
+        XCTAssert(game.returnBall())
     }
     func test_returnToMainMenu() {
-        XCTAssert(api.returnToMainMenu())
+        XCTAssert(game.returnToMainMenu())
     }
     func test_shootHook() {
-        XCTAssert(api.shootHook())
+        XCTAssert(game.shootHook())
     }
     func test_showPowerLevel() {
-        XCTAssert(api.showPowerLevel())
+        XCTAssert(game.showPowerLevel())
     }
     func test_startWithLevel() {
-        XCTAssert(api.startWithLevel())
+        XCTAssert(game.startWithLevel())
     }
     func test_toggleActivateBall() {
-        XCTAssert(api.toggleActivateBall())
+        XCTAssert(game.toggleActivateBall())
     }
     func test_zoomFeatures() {
-        XCTAssert(api.zoomFeatures())
+        XCTAssert(game.zoomFeatures())
     }
 }
