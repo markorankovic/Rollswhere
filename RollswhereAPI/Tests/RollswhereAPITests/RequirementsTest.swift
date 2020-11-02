@@ -2,7 +2,7 @@ import Hope
 import RollswhereAPI
 
 final class RequirementsTest: Hopes {
-    let game = Game()
+    let game = GameRequirementsTracker()
     func test_shootBall() {
         XCTAssert(game.shootBall())
     }
@@ -59,9 +59,6 @@ final class RequirementsTest: Hopes {
     }
     func test_mainMenu() {
         XCTAssert(game.mainMenu())
-    }
-    func test_programmaticLevelConstruction() {
-        XCTAssert(game.programmaticLevelConstruction())
     }
     func test_togglePause() {
         XCTAssert(game.togglePause())
