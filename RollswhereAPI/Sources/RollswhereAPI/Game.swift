@@ -1,5 +1,16 @@
-public struct Game {
-    public init() { }
+public class Game: GKStateMachine {    
+    public init() {
+        super.init(
+            states: [
+                LaunchingState(),
+                ReturningState(),
+                WaitingState(),
+                ShootingState(),
+                MainMenuState()
+            ]
+        )
+        enter(LaunchingState.self)
+    }
 }
 
 extension Game: Requirements {
