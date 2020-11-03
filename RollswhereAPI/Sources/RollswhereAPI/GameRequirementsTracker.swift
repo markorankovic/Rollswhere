@@ -45,4 +45,18 @@ public struct GameRequirementsTracker {
     public func shrinkingBall() -> Bool                 { false }
     public func growingBall() -> Bool                   { false }
     public func ballCanPassBlockWhenActivated() -> Bool { false }
+    public func mvp() -> Bool                           { false }
+    public func windowDesigns() -> Bool                 { false }
+    public func atLeast100Levels() -> Bool              { false }
+    public func movingFixedBlocks() -> Bool             { false }
+    public func ramps() -> Bool                         { false }
+    public func chains() -> Bool                        { false }
+    public func trains() -> Bool                        { false }
+    public func speedBoost() -> Bool                    { false }
+    public func trampoline() -> Bool                    { false }
+    public func roughAndSlipperySurfaces() -> Bool      { false }
+    public func water() -> Bool                         { false }
+    public func lava() -> Bool                          { false }
+    public func seasons() -> Bool                       { false }
+    public func organizeLevelsIntoChapters() -> Bool    { false }
 }
