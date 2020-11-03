@@ -1,1 +1,1 @@
-public class WaitingState: GameState { }
+public class WaitingState: GKState { }

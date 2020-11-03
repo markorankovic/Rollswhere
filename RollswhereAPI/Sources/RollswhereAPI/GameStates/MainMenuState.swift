@@ -1,1 +1,1 @@
-public class MainMenuState: GameState { }
+public class MainMenuState: GKState { }

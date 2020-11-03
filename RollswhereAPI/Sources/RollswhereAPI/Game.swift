@@ -1,4 +1,11 @@
-public class Game: GKStateMachine {    
+public class Game: GKStateMachine {
+    
+    public weak var viewController: UIViewController?
+    
+    var scene: GameScene? {
+        return (viewController?.view as? SKView)?.scene as? GameScene
+    }
+    
     public init() {
         super.init(
             states: [
@@ -11,4 +18,9 @@ public class Game: GKStateMachine {
         )
         enter(LaunchingState.self)
     }
+        
+    public func returnBall() {
+        scene?.returnBall()
+    }
+        
 }

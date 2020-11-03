@@ -15,7 +15,7 @@ public struct GameRequirementsTracker {
     public func draggableAndRotatingItems() -> Bool     { false }
     public func startWithLevel() -> Bool                { false }
     public func shootBall() -> Bool                     { false }
-    public func returnBall() -> Bool                    { false }
+    public func returnBall() -> Bool                    { true  }
     public func nextLevel() -> Bool                     { false }
     public func returnToMainMenu() -> Bool              { false }
     public func shootHook() -> Bool                     { false }
@@ -33,4 +33,16 @@ public struct GameRequirementsTracker {
     public func createdUniqueTypefaceForGame() -> Bool  { false }
     public func sksTemplateMade() -> Bool               { false }
     public func autoExportPhotoshopAssets() -> Bool     { false }
+    public func jetpacks() -> Bool                      { false }
+    public func wideLevels() -> Bool                    { false }
+    public func pipeMustBeUnlocked() -> Bool            { false }
+    public func blowingAir() -> Bool                    { false }
+    public func limitedShots() -> Bool                  { false }
+    public func limitedTime() -> Bool                   { false }
+    public func certainViewAreasLocked() -> Bool        { false }
+    public func rollswhereLogo() -> Bool                { false }
+    public func electricGate() -> Bool                  { false }
+    public func shrinkingBall() -> Bool                 { false }
+    public func growingBall() -> Bool                   { false }
+    public func ballCanPassBlockWhenActivated() -> Bool { false }
 }
