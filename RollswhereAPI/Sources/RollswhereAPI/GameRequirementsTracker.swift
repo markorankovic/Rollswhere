@@ -59,4 +59,5 @@ public struct GameRequirementsTracker {
     public func lava() -> Bool                          { false }
     public func seasons() -> Bool                       { false }
     public func organizeLevelsIntoChapters() -> Bool    { false }
+    public func checksIfBallIsResting() -> Bool         { false }
 }
