@@ -23,13 +23,9 @@
 		ADC9EAD8254FACEC00DCD571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC9EAAF254FACEC00DCD571 /* Assets.xcassets */; };
 		ADC9EAEA254FADE600DCD571 /* imports.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9EAE9254FADE600DCD571 /* imports.swift */; };
 		ADC9EAEB254FADE600DCD571 /* imports.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9EAE9254FADE600DCD571 /* imports.swift */; };
-		ADCB8FEC2551E049004E7092 /* ball@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCB8FE92551E049004E7092 /* ball@3x.png */; };
-		ADCB8FED2551E049004E7092 /* ball@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCB8FE92551E049004E7092 /* ball@3x.png */; };
-		ADCB8FEE2551E049004E7092 /* ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCB8FEA2551E049004E7092 /* ball@2x.png */; };
-		ADCB8FEF2551E049004E7092 /* ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCB8FEA2551E049004E7092 /* ball@2x.png */; };
-		ADCB8FF02551E049004E7092 /* ball@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCB8FEB2551E049004E7092 /* ball@1x.png */; };
-		ADCB8FF12551E049004E7092 /* ball@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCB8FEB2551E049004E7092 /* ball@1x.png */; };
 		ADCB8FFB2551EEB3004E7092 /* RollswhereAPI in Frameworks */ = {isa = PBXBuildFile; productRef = ADCB8FFA2551EEB3004E7092 /* RollswhereAPI */; };
+		ADD5E4DC2554098100E51721 /* ball in Resources */ = {isa = PBXBuildFile; fileRef = ADD5E4DB2554098100E51721 /* ball */; };
+		ADD5E4DD2554098100E51721 /* ball in Resources */ = {isa = PBXBuildFile; fileRef = ADD5E4DB2554098100E51721 /* ball */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +45,7 @@
 		ADC9EACF254FACEC00DCD571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADC9EAD0254FACEC00DCD571 /* Rollswhere_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rollswhere_macOS.entitlements; sourceTree = "<group>"; };
 		ADC9EAE9254FADE600DCD571 /* imports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imports.swift; sourceTree = "<group>"; };
-		ADCB8FE92551E049004E7092 /* ball@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@3x.png"; sourceTree = "<group>"; };
-		ADCB8FEA2551E049004E7092 /* ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@2x.png"; sourceTree = "<group>"; };
-		ADCB8FEB2551E049004E7092 /* ball@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@1x.png"; sourceTree = "<group>"; };
+		ADD5E4DB2554098100E51721 /* ball */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ball; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +71,7 @@
 		AD1578542550B4DC00B67331 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				ADCB8FEB2551E049004E7092 /* ball@1x.png */,
-				ADCB8FEA2551E049004E7092 /* ball@2x.png */,
-				ADCB8FE92551E049004E7092 /* ball@3x.png */,
+				ADD5E4DB2554098100E51721 /* ball */,
 				AD1578552550B5A400B67331 /* Aspect Ratios.png */,
 			);
 			path = Images;
@@ -232,13 +224,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD1578562550B5A400B67331 /* Aspect Ratios.png in Resources */,
+				ADD5E4DC2554098100E51721 /* ball in Resources */,
 				AD1578502550B47400B67331 /* LevelTemplate.sks in Resources */,
-				ADCB8FF02551E049004E7092 /* ball@1x.png in Resources */,
 				ADC9EABD254FACEC00DCD571 /* Main.storyboard in Resources */,
 				ADC9EAC0254FACEC00DCD571 /* LaunchScreen.storyboard in Resources */,
-				ADCB8FEC2551E049004E7092 /* ball@3x.png in Resources */,
 				ADC9EAD7254FACEC00DCD571 /* Assets.xcassets in Resources */,
-				ADCB8FEE2551E049004E7092 /* ball@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,12 +236,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADCB8FED2551E049004E7092 /* ball@3x.png in Resources */,
-				ADCB8FEF2551E049004E7092 /* ball@2x.png in Resources */,
 				AD1578512550B47400B67331 /* LevelTemplate.sks in Resources */,
 				ADC9EACE254FACEC00DCD571 /* Main.storyboard in Resources */,
+				ADD5E4DD2554098100E51721 /* ball in Resources */,
 				AD1578572550B5A400B67331 /* Aspect Ratios.png in Resources */,
-				ADCB8FF12551E049004E7092 /* ball@1x.png in Resources */,
 				ADC9EAD8254FACEC00DCD571 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

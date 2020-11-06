@@ -1,8 +1,8 @@
-public class MoveableBlock: SKSpriteNode {
+public class MoveableBlock: InteractiveNode {
     var skView: SKView? {
         return scene?.view
     }
-    public func panned(gestureRecognizer: UIPanGestureRecognizer) {
+    public override func panned(gestureRecognizer: UIPanGestureRecognizer) {
         let oneFinger = gestureRecognizer.numberOfTouches == 1
         guard oneFinger, let scene = scene else {
             return potentialRotation(gestureRecognizer)

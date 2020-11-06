@@ -27,10 +27,16 @@ open class GameScene: SKScene {
     }
     
     func returnBall() {
-        let ball = childNode(withName: "ball") as! SKShapeNode
-        let entryPipe = childNode(withName: "entryPipe") as! SKShapeNode
+        let ball = childNode(withName: "ball") as! Ball
+        ball.physicsBody?.velocity = .zero
+        ball.physicsBody?.angularVelocity = 0
+        ball.zRotation = 0
+        let entryPipe = childNode(withName: "entryPipe")!
         let spawnPoint = entryPipe.childNode(withName: "spawnPoint")!
-        ball.position = spawnPoint.position
+        ball.position = .init(
+            x: entryPipe.position.x + spawnPoint.position.x,
+            y: entryPipe.position.y + spawnPoint.position.y
+        )
     }
     
     open override func update(_ currentTime: TimeInterval) {

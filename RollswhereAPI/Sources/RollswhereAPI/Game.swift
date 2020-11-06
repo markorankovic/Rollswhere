@@ -11,10 +11,14 @@ extension GKState {
 
 public class Game: GKStateMachine {
     
-    public weak var viewController: UIViewController?
+    public weak var viewController: GameViewController?
+    
+    var view: SKView? {
+        viewController?.skView
+    }
     
     var scene: GameScene? {
-        return (viewController?.view as? SKView)?.scene as? GameScene
+        return view?.scene as? GameScene
     }
     
     var ball: Ball? {
@@ -33,8 +37,14 @@ public class Game: GKStateMachine {
         )
         enter(LaunchingState.self)
     }
-        
+    
+    func enterLevel() {
+        view?.presentScene(GameScene(fileNamed: "LevelTemplate.sks"))
+        returnBall()
+    }
+    
     public func returnBall() {
+        enter(ReturningState.self)
         scene?.returnBall()
     }
     
@@ -45,4 +55,10 @@ public class Game: GKStateMachine {
         }
     }
         
+}
+
+extension SKPhysicsBody {
+    var isResting: Bool {
+        return velocity == .zero
+    }
 }
