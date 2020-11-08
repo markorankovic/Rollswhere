@@ -32,9 +32,10 @@ public class Ball: InteractiveNode {
             guard dragging else { return }
             // Ball is being dragged
             let distanceToBall = hypot(loc.x - position.x, loc.y - position.y)
-            power = (fullSpeed * distanceToBall) / maxDist
+            let relevantDist = (distanceToBall - frame.width) < 0 ? 0 : (distanceToBall - frame.width)
+            power = (fullSpeed * relevantDist) / maxDist
             power = power < fullSpeed ? power : fullSpeed
-            renderPowerBar(distanceToBall, gestureRecognizer.state)
+            renderPowerBar(relevantDist, gestureRecognizer.state)
         }
         
         else if gestureRecognizer.state == .ended {
@@ -45,16 +46,18 @@ public class Ball: InteractiveNode {
         }
     }
     
-    func renderPowerBar(_ distanceToBall: CGFloat, _ state: UIGestureRecognizer.State) {
+    func renderPowerBar(_ relevantDist: CGFloat, _ state: UIGestureRecognizer.State) {
         let π = CGFloat.pi
-        let theta = (distanceToBall * (2 * π)) / maxDist
+        let π2 = 2 * π
+        let limitedDist = relevantDist > maxDist ? maxDist : relevantDist
+        let theta = ((limitedDist / maxDist) * π2)
         
         let circlePath = CGMutablePath()
         circlePath.addArc(
             center: .zero,
             radius: frame.width / 2,
-            startAngle: π / 4,
-            endAngle: π / 4 + theta,
+            startAngle: π/2,
+            endAngle: π/2 - theta,
             clockwise: true
         )
         
