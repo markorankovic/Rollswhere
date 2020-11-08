@@ -14,22 +14,19 @@ public struct GameRequirementsTracker {
     public func allSpecialsImplemented() -> Bool        { false }
     public func draggableAndRotatingItems() -> Bool     { false }
     public func startWithLevel() -> Bool                { false }
-    public func shootBall() -> Bool                     { false }
+    public func shootBall() -> Bool                     { true  }
     public func returnBall() -> Bool                    { true  }
     public func nextLevel() -> Bool                     { false }
     public func returnToMainMenu() -> Bool              { false }
     public func shootHook() -> Bool                     { false }
-    public func toggleActivateBall() -> Bool            { false }
+    public func toggleActivateBall() -> Bool            { true  }
     public func zoomFeatures() -> Bool                  { false }
-    public func showPowerLevel() -> Bool                { false }
+    public func showPowerLevel() -> Bool                { true  }
     public func associateBehaviorsWithSKNodes() -> Bool { false }
     public func draggingOnlyOneSKNodeAtATime() -> Bool  { false }
     public func HUD() -> Bool                           { false }
     public func photoshopLevelTemplate() -> Bool        { true  }
-    public func ballDesign() -> Bool                    { false }
-    public func pipeDesign() -> Bool                    { false }
-    public func blockDesign() -> Bool                   { false }
-    public func aspectRatioBoxes() -> Bool              { false }
+    public func aspectRatioBoxes() -> Bool              { true  }
     public func createdUniqueTypefaceForGame() -> Bool  { false }
     public func sksTemplateMade() -> Bool               { false }
     public func autoExportPhotoshopAssets() -> Bool     { false }

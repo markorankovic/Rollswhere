@@ -13,5 +13,11 @@ public class WaitingState: GKState {
             n.panned(gestureRecognizer: gestureRecognizer)
         }
     }
+    
+    public override func tapped(gestureRecognizer: UITapGestureRecognizer) {
+        for n in (scene?.children ?? []).compactMap({ $0 as? InteractiveNode }) {
+            n.tapped(gestureRecognizer: gestureRecognizer)
+        }
+    }
         
 }

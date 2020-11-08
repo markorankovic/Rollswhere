@@ -2,20 +2,51 @@ public class MoveableBlock: InteractiveNode {
     var skView: SKView? {
         return scene?.view
     }
-    public override func panned(gestureRecognizer: UIPanGestureRecognizer) {
-        let oneFinger = gestureRecognizer.numberOfTouches == 1
-        guard oneFinger, let scene = scene else {
-            return potentialRotation(gestureRecognizer)
+    
+    var active = false
+    var rotation = false
+    
+    private func touched(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        if let loc = scene?.convertPoint(fromView: gestureRecognizer.location(in: skView)) {
+            return scene?.nodes(at: loc).contains(self) ?? false
         }
-        let loc = gestureRecognizer.location(in: skView)
-        if scene.nodes(at: loc).contains(self) {
-            position = loc
+        return false
+    }
+    
+    public override func tapped(gestureRecognizer: UITapGestureRecognizer) {
+        if gestureRecognizer.state == .ended {
+            if touched(gestureRecognizer) && gestureRecognizer.numberOfTouches == 1 {
+                rotation = !rotation
+            }
         }
     }
-    private func potentialRotation(_ gestureRecognizer: UIPanGestureRecognizer) {
-        let twoFingers = gestureRecognizer.numberOfTouches == 2
-        guard twoFingers, let scene = scene else {
-            return
+    
+    public override func panned(gestureRecognizer: UIPanGestureRecognizer) {
+        if gestureRecognizer.state == .changed {
+            guard active else { return }
+            if rotation {
+                rotation(gestureRecognizer)
+            } else {
+                drag(gestureRecognizer)
+            }
+        } else if gestureRecognizer.state == .ended {
+            active = false
+        } else if gestureRecognizer.state == .began {
+            if touched(gestureRecognizer) {
+                active = true
+            }
         }
+    }
+    
+    private func rotation(_ gestureRecognizer: UIPanGestureRecognizer) {
+        let dx = gestureRecognizer.velocity(in: skView).x * 0.0003
+        zRotation += dx
+    }
+    
+    private func drag(_ gestureRecognizer: UIPanGestureRecognizer) {
+        let dx = gestureRecognizer.velocity(in: skView).x * 0.03
+        let dy = -gestureRecognizer.velocity(in: skView).y * 0.03
+        position.x += dx
+        position.y += dy
     }
 }

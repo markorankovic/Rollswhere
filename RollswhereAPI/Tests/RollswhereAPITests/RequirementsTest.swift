@@ -75,15 +75,6 @@ final class RequirementsTest: Hopes {
     func test_photoshopLevelTemplate() {
         XCTAssert(tracker.photoshopLevelTemplate())
     }
-    func test_ballDesign() {
-        XCTAssert(tracker.ballDesign())
-    }
-    func test_pipeDesign() {
-        XCTAssert(tracker.pipeDesign())
-    }
-    func test_blockDesign() {
-        XCTAssert(tracker.blockDesign())
-    }
     func test_aspectRatioBoxes() {
         XCTAssert(tracker.aspectRatioBoxes())
     }
