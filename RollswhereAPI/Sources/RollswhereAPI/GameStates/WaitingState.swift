@@ -1,11 +1,19 @@
-public class WaitingState: GKState {
-    
+let fixedObjects: UInt32 = 1
+let interactiveObjects: UInt32 = 2
+
+extension GKState {
     var scene: GameScene? {
         return (stateMachine as? Game)?.scene
     }
     
+}
+
+public class WaitingState: GKState {
+        
     public override func didEnter(from previousState: GKState?) {
         print("Entered WaitingState")
+        let ball = scene?.childNode(withName: "ball") as! Ball
+        ball.physicsBody?.collisionBitMask = fixedObjects
     }
     
     public override func panned(gestureRecognizer: UIPanGestureRecognizer) {

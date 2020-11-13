@@ -39,10 +39,11 @@ public class Ball: InteractiveNode {
         }
         
         else if gestureRecognizer.state == .ended {
-            guard dragging else { return }
-            physicsBody?.velocity.dx = power
+            if dragging && power != 0 {
+                physicsBody?.velocity.dx = power
+                game?.enter(ShootingState.self)
+            }
             dragging = false
-            game?.enter(ShootingState.self)
         }
     }
     
