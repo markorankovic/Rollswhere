@@ -5,6 +5,8 @@ extension GKState {
     }
     @objc public func panned(gestureRecognizer: UIPanGestureRecognizer) {
     }
+    @objc public func longPressed(gestureRecognizer: UILongPressGestureRecognizer) {
+    }
     @objc public func update(_ currentTime: TimeInterval) {
     }
 }
@@ -39,7 +41,8 @@ public class Game: GKStateMachine {
     }
     
     func enterLevel() {
-        view?.presentScene(GameScene(fileNamed: "LevelTemplate.sks"))
+        let scene = GameScene(fileNamed: "LevelTemplate.sks")
+        view?.presentScene(scene)
         returnBall()
     }
     
@@ -50,7 +53,7 @@ public class Game: GKStateMachine {
     
     public func ballReadyIfRested() {
         guard let ballBody = ball?.physicsBody else { return }
-        if ballBody.isResting {
+        if ballBody.resting && ballBody.allContactedBodies().count > 0 {
             enter(WaitingState.self)
         }
     }
@@ -58,7 +61,8 @@ public class Game: GKStateMachine {
 }
 
 extension SKPhysicsBody {
-    var isResting: Bool {
-        return velocity == .zero
+    var resting: Bool {
+        let speed: CGFloat = 0.01
+        return abs(velocity.dx) < speed && abs(velocity.dy) < speed
     }
 }

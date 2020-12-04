@@ -13,7 +13,10 @@ public class WaitingState: GKState {
     public override func didEnter(from previousState: GKState?) {
         print("Entered WaitingState")
         let ball = scene?.childNode(withName: "ball") as! Ball
+        ball.physicsBody!.angularDamping = 0.1
         ball.physicsBody?.collisionBitMask = fixedObjects
+        ball.zRotation = 0
+        ball.physicsBody?.isDynamic = false
     }
     
     public override func panned(gestureRecognizer: UIPanGestureRecognizer) {
@@ -27,5 +30,5 @@ public class WaitingState: GKState {
             n.tapped(gestureRecognizer: gestureRecognizer)
         }
     }
-        
+            
 }

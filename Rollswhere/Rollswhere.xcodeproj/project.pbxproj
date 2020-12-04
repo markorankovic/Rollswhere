@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD1578502550B47400B67331 /* LevelTemplate.sks in Resources */ = {isa = PBXBuildFile; fileRef = AD15784F2550B47400B67331 /* LevelTemplate.sks */; };
-		AD1578512550B47400B67331 /* LevelTemplate.sks in Resources */ = {isa = PBXBuildFile; fileRef = AD15784F2550B47400B67331 /* LevelTemplate.sks */; };
 		AD1578562550B5A400B67331 /* Aspect Ratios.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1578552550B5A400B67331 /* Aspect Ratios.png */; };
 		AD1578572550B5A400B67331 /* Aspect Ratios.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1578552550B5A400B67331 /* Aspect Ratios.png */; };
+		AD243BD7256883BE003E1CA2 /* Slider in Frameworks */ = {isa = PBXBuildFile; productRef = AD243BD6256883BE003E1CA2 /* Slider */; };
+		AD243BDB256885D5003E1CA2 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AD243BDA256885D5003E1CA2 /* MainMenuScene.sks */; };
+		AD243BDC256885D5003E1CA2 /* MainMenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AD243BDA256885D5003E1CA2 /* MainMenuScene.sks */; };
 		ADA9EB972551549200A935A1 /* RollswhereAPI in Frameworks */ = {isa = PBXBuildFile; productRef = ADA9EB962551549200A935A1 /* RollswhereAPI */; };
 		ADA9EB9B25515CF000A935A1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA9EB9A25515CF000A935A1 /* GameScene.swift */; };
 		ADC9EAB8254FACEC00DCD571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC9EAB7254FACEC00DCD571 /* AppDelegate.swift */; };
@@ -26,11 +27,13 @@
 		ADCB8FFB2551EEB3004E7092 /* RollswhereAPI in Frameworks */ = {isa = PBXBuildFile; productRef = ADCB8FFA2551EEB3004E7092 /* RollswhereAPI */; };
 		ADD5E4DC2554098100E51721 /* ball in Resources */ = {isa = PBXBuildFile; fileRef = ADD5E4DB2554098100E51721 /* ball */; };
 		ADD5E4DD2554098100E51721 /* ball in Resources */ = {isa = PBXBuildFile; fileRef = ADD5E4DB2554098100E51721 /* ball */; };
+		ADE7D1CB257A77B40099E69C /* LevelTemplate.sks in Resources */ = {isa = PBXBuildFile; fileRef = ADE7D1CA257A77B40099E69C /* LevelTemplate.sks */; };
+		ADE7D1CC257A77B40099E69C /* LevelTemplate.sks in Resources */ = {isa = PBXBuildFile; fileRef = ADE7D1CA257A77B40099E69C /* LevelTemplate.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD15784F2550B47400B67331 /* LevelTemplate.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelTemplate.sks; sourceTree = "<group>"; };
 		AD1578552550B5A400B67331 /* Aspect Ratios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aspect Ratios.png"; sourceTree = "<group>"; };
+		AD243BDA256885D5003E1CA2 /* MainMenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenuScene.sks; sourceTree = "<group>"; };
 		ADA9EB9A25515CF000A935A1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		ADC9EAAF254FACEC00DCD571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADC9EAB4254FACEC00DCD571 /* Rollswhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rollswhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +49,8 @@
 		ADC9EAD0254FACEC00DCD571 /* Rollswhere_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rollswhere_macOS.entitlements; sourceTree = "<group>"; };
 		ADC9EAE9254FADE600DCD571 /* imports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imports.swift; sourceTree = "<group>"; };
 		ADD5E4DB2554098100E51721 /* ball */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ball; sourceTree = "<group>"; };
+		ADE7D1CA257A77B40099E69C /* LevelTemplate.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelTemplate.sks; sourceTree = "<group>"; };
+		ADF4AFCD2579B680007ECA71 /* testGame.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = testGame.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA9EB972551549200A935A1 /* RollswhereAPI in Frameworks */,
+				AD243BD7256883BE003E1CA2 /* Slider in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,10 +104,11 @@
 		ADC9EAAB254FACEB00DCD571 /* Rollswhere Shared */ = {
 			isa = PBXGroup;
 			children = (
-				AD1578542550B4DC00B67331 /* Images */,
-				ADC9EAAF254FACEC00DCD571 /* Assets.xcassets */,
+				ADE7D1CA257A77B40099E69C /* LevelTemplate.sks */,
+				AD243BDA256885D5003E1CA2 /* MainMenuScene.sks */,
 				ADC9EAE9254FADE600DCD571 /* imports.swift */,
-				AD15784F2550B47400B67331 /* LevelTemplate.sks */,
+				ADC9EAAF254FACEC00DCD571 /* Assets.xcassets */,
+				AD1578542550B4DC00B67331 /* Images */,
 			);
 			path = "Rollswhere Shared";
 			sourceTree = "<group>";
@@ -122,6 +129,7 @@
 				ADC9EABB254FACEC00DCD571 /* Main.storyboard */,
 				ADC9EABE254FACEC00DCD571 /* LaunchScreen.storyboard */,
 				ADC9EAC1254FACEC00DCD571 /* Info.plist */,
+				ADF4AFCD2579B680007ECA71 /* testGame.playground */,
 			);
 			path = "Rollswhere iOS";
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 			name = "Rollswhere iOS";
 			packageProductDependencies = (
 				ADA9EB962551549200A935A1 /* RollswhereAPI */,
+				AD243BD6256883BE003E1CA2 /* Slider */,
 			);
 			productName = "Rollswhere iOS";
 			productReference = ADC9EAB4254FACEC00DCD571 /* Rollswhere.app */;
@@ -208,6 +217,9 @@
 				Base,
 			);
 			mainGroup = ADC9EAA6254FACEB00DCD571;
+			packageReferences = (
+				AD243BD5256883BE003E1CA2 /* XCRemoteSwiftPackageReference "Slider" */,
+			);
 			productRefGroup = ADC9EAB5254FACEC00DCD571 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -223,9 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE7D1CB257A77B40099E69C /* LevelTemplate.sks in Resources */,
 				AD1578562550B5A400B67331 /* Aspect Ratios.png in Resources */,
+				AD243BDB256885D5003E1CA2 /* MainMenuScene.sks in Resources */,
 				ADD5E4DC2554098100E51721 /* ball in Resources */,
-				AD1578502550B47400B67331 /* LevelTemplate.sks in Resources */,
 				ADC9EABD254FACEC00DCD571 /* Main.storyboard in Resources */,
 				ADC9EAC0254FACEC00DCD571 /* LaunchScreen.storyboard in Resources */,
 				ADC9EAD7254FACEC00DCD571 /* Assets.xcassets in Resources */,
@@ -236,10 +249,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD1578512550B47400B67331 /* LevelTemplate.sks in Resources */,
+				ADE7D1CC257A77B40099E69C /* LevelTemplate.sks in Resources */,
 				ADC9EACE254FACEC00DCD571 /* Main.storyboard in Resources */,
 				ADD5E4DD2554098100E51721 /* ball in Resources */,
 				AD1578572550B5A400B67331 /* Aspect Ratios.png in Resources */,
+				AD243BDC256885D5003E1CA2 /* MainMenuScene.sks in Resources */,
 				ADC9EAD8254FACEC00DCD571 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,7 +547,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		AD243BD5256883BE003E1CA2 /* XCRemoteSwiftPackageReference "Slider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markorankovic/Slider.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		AD243BD6256883BE003E1CA2 /* Slider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD243BD5256883BE003E1CA2 /* XCRemoteSwiftPackageReference "Slider" */;
+			productName = Slider;
+		};
 		ADA9EB962551549200A935A1 /* RollswhereAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RollswhereAPI;

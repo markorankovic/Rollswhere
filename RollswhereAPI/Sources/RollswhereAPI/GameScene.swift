@@ -55,4 +55,8 @@ open class GameScene: SKScene {
         currentState?.panned(gestureRecognizer: gestureRecognizer)
     }
     
+    public func longPressed(gestureRecognizer: UILongPressGestureRecognizer) {
+        currentState?.longPressed(gestureRecognizer: gestureRecognizer)
+    }
+    
 }

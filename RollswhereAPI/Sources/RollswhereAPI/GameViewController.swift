@@ -17,6 +17,14 @@ public class GameViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        print(5)
+        game.viewController = self
+        addGestureRecognizers()
+        game.enterLevel()
+    }
+    
+    public func initializeForPlayground() {
+        print(5)
         game.viewController = self
         addGestureRecognizers()
         game.enterLevel()
@@ -26,9 +34,11 @@ public class GameViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapped(gestureRecognizer:)))
         let pinch = UIPinchGestureRecognizer(target: self, action: #selector(pinched(gestureRecognizer:)))
         let pan = UIPanGestureRecognizer(target: self, action: #selector(panned(gestureRecognizer:)))
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(longPressed(gestureRecognizer:)))
         skView.addGestureRecognizer(tap)
         skView.addGestureRecognizer(pinch)
         skView.addGestureRecognizer(pan)
+        skView.addGestureRecognizer(longPress)
     }
     
     @objc func tapped(gestureRecognizer: UITapGestureRecognizer) {
@@ -39,6 +49,9 @@ public class GameViewController: UIViewController {
     }
     @objc func panned(gestureRecognizer: UIPanGestureRecognizer) {
         ((view as! SKView).scene as? GameScene)?.panned(gestureRecognizer: gestureRecognizer)
+    }
+    @objc func longPressed(gestureRecognizer: UILongPressGestureRecognizer) {
+        ((view as! SKView).scene as? GameScene)?.longPressed(gestureRecognizer: gestureRecognizer)
     }
 
     public override var shouldAutorotate: Bool {

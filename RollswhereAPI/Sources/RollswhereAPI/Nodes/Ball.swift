@@ -1,7 +1,7 @@
 import Foundation
 
 public class Ball: InteractiveNode {
-    
+        
     var power: CGFloat = 0
     let maxPower: CGFloat = 1
     let maxDist: CGFloat = 100
@@ -14,6 +14,17 @@ public class Ball: InteractiveNode {
     
     var game: Game? {
         return ((scene?.view)?.findViewController() as? GameViewController)?.game
+    }
+    
+    func configureSlideableSettings() {
+//        guard let physicsBody = physicsBody else { return }
+        
+        // Slideable values
+//        physicsBody.angularDamping
+//        physicsBody.angularVelocity
+//        physicsBody.friction
+//        physicsBody.linearDamping
+//        physicsBody.velocity
     }
     
     public override func panned(gestureRecognizer: UIPanGestureRecognizer) {
@@ -40,6 +51,7 @@ public class Ball: InteractiveNode {
         
         else if gestureRecognizer.state == .ended {
             if dragging && power != 0 {
+                physicsBody?.isDynamic = true
                 physicsBody?.velocity.dx = power
                 game?.enter(ShootingState.self)
             }

@@ -9,6 +9,15 @@
           "revision": "3d1c857a0179b4ca8aaaddcfe8247413853c5fc9",
           "version": null
         }
+      },
+      {
+        "package": "Slider",
+        "repositoryURL": "https://github.com/markorankovic/Slider.git",
+        "state": {
+          "branch": "main",
+          "revision": "7279a3141b24cf6f66751005e8231fa9c450fc1b",
+          "version": null
+        }
       }
     ]
   },
