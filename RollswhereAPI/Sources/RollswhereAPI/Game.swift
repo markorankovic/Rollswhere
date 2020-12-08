@@ -53,8 +53,11 @@ public class Game: GKStateMachine {
     
     public func ballReadyIfRested() {
         guard let ballBody = ball?.physicsBody else { return }
-        if ballBody.resting && ballBody.allContactedBodies().count > 0 {
-            enter(WaitingState.self)
+        DispatchQueue.main.async {
+            if ballBody.resting && ballBody.allContactedBodies().count > 0 {
+                print(ballBody.allContactedBodies())
+                self.enter(WaitingState.self)
+            }
         }
     }
         
